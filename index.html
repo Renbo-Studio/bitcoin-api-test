@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="icon/all.css">
+    <link rel="stylesheet" href="js/all.js">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="ani/css/uikit.css">
+    <link rel="stylesheet" href="ani/css/uikit.min.css">
+    <link rel="stylesheet" href="ani/css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="ani/css/uikit-rtl.css">
+    <!-- UIkit JS -->
+    <script src="ani/js/uikit-icons.min.js"></script>
+    <script src="ani/js/uikit.min.js"></script>
+    <title>Home Page</title>
+</head>
+<style>
+    body
+    {
+        background-color: rgb(43, 42, 42);
+        font-family: 'Cascadia Code';
+    }
+    .navpila
+    {
+        height: 35px;
+    }
+    ul
+    {
+        top: 60%;
+        position: relative;
+        right: 34%;
+    }
+    .av
+    {   
+        position: relative;
+        bottom: 40px;
+    }
+    .pp:hover
+    {
+        color: aquamarine;
+    }
+    .mm:hover
+    {
+        color: red;
+        font-weight: bolder;
+    }
+    .heada
+    {
+        font-size: 22px;
+        color: #00724c;
+        font-weight: bolder;
+        text-align: center;
+    }
+</style>
+<body>
+    <nav class="black navpila">
+        <ul class="right">
+            <li><a class="av pp" href="#!">Home</a></li>
+            <li><a class="av pp" href="#!">About Us</a></li>
+            <li><a class="av pp" href="#!">More Info</a></li>
+            <li><a class="av pp" href="#!">Tutorials</a></li>
+            <li><a class="av mm" href="#!">Quit</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <div style="width: 100%;padding-left: 28vw;padding-bottom: 25vw;" class="center">
+            <div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
+        </div>
+    </div>
+</body>
+<script>
+    (function(b,i,t,C,O,I,N) {
+      window.addEventListener('load',function() {
+        if(b.getElementById(C))return;
+        I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+        I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+      },false)
+    })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+  </script>
+</html>
